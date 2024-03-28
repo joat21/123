@@ -16,7 +16,7 @@ function App() {
         <div className="current-operand">{currentOperand}</div>
       </div>
       <CalculatorButton className="span-two" type={ACTIONS.CLEAR} dispatch={dispatch} value='AC' />
-      <button>DEL</button>
+      <CalculatorButton type={ACTIONS.DELETE_DIGIT} dispatch={dispatch} value='DEL' />
       <CalculatorButton type={ACTIONS.CHOOSE_OPERATION} dispatch={dispatch} value='/' />
       <CalculatorButton type={ACTIONS.ADD_DIGIT} dispatch={dispatch} value='1' />
       <CalculatorButton type={ACTIONS.ADD_DIGIT} dispatch={dispatch} value='2' />
